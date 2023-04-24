@@ -21,7 +21,7 @@ cd /bin
 See the README.md files inside the each microservices directory:
 
 - monolith
-- BoundedContext1088
+- inventory
 
 
 ## Run API Gateway (Spring Gateway)
@@ -35,7 +35,7 @@ mvn spring-boot:run
 ```
  http :8088/orders id="id" productId="productId" qty="qty" customerId="customerId" amount="amount" 
 ```
-- BoundedContext1088
+- inventory
 ```
  http :8088/inventories id="id" stock="stock" 
 ```
