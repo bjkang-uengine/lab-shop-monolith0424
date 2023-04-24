@@ -73,6 +73,6 @@ spring:
           contentType: application/json
 
 api:
-  url: BoundedContext1088:8080
+  url: inventory:8080
 
 

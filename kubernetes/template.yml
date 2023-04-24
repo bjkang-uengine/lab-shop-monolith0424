@@ -43,22 +43,22 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: BoundedContext1088
+  name: inventory
   labels:
-    app: BoundedContext1088
+    app: inventory
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: BoundedContext1088
+      app: inventory
   template:
     metadata:
       labels:
-        app: BoundedContext1088
+        app: inventory
     spec:
       containers:
-        - name: BoundedContext1088
-          image: username/BoundedContext1088:latest
+        - name: inventory
+          image: username/inventory:latest
           ports:
             - containerPort: 8080
           readinessProbe:
@@ -102,13 +102,13 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: BoundedContext1088
+  name: inventory
   labels:
-    app: BoundedContext1088
+    app: inventory
 spec:
   ports:
     - port: 8080
       targetPort: 8080
   selector:
-    app: BoundedContext1088
+    app: inventory
 
